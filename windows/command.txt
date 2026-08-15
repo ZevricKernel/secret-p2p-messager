@@ -1,0 +1,9 @@
+# Install Python dependencies (same on both machines)
+cd client
+pip install -r requirements.txt
+
+# ── Terminal 1 (Alice) ──
+python messenger.py https://p2p-signal.yourname.workers.dev secret-room alice
+
+# ── Terminal 2 (Bob) ──
+python messenger.py https://p2p-signal.yourname.workers.dev secret-room bob

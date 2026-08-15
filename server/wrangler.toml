@@ -1,0 +1,9 @@
+name = "p2p-signal"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# ── IMPORTANT: run `npx wrangler kv namespace create SIGNAL_KV`
+# ── then paste the returned id below ──
+[[kv_namespaces]]
+binding = "SIGNAL_KV"
+id = "f0a041a4e59744efb881574d29759379"

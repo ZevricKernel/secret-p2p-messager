@@ -1,0 +1,21 @@
+# 1. Install Wrangler (Cloudflare CLI)
+npm install -g wrangler
+
+# 2. Authenticate with Cloudflare
+wrangler login
+
+# 3. Create the project directory
+mkdir -p signal-server/src
+# ... paste the files above into their locations ...
+
+# 4. Create the KV namespace
+cd signal-server
+wrangler kv namespace create SIGNAL_KV
+# → Copies an ID to your clipboard. Paste it into wrangler.toml
+
+# 5. Test locally
+npx wrangler dev
+
+# 6. Deploy to Cloudflare's edge
+npx wrangler deploy
+# → Gives you a URL like https://p2p-signal.yourname.workers.dev
