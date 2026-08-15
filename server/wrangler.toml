@@ -6,4 +6,4 @@ compatibility_date = "2024-01-01"
 # ── then paste the returned id below ──
 [[kv_namespaces]]
 binding = "SIGNAL_KV"
-id = ""
+id = "PASTE YOUR KV ID HERE"
